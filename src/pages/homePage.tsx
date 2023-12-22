@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import animeBackground1 from "../assets/img/anime-bg-1.jpg";
 import FooterComponent from "../components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -12,6 +13,9 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
+     <Helmet>
+      <title>Anime Finder | Home</title>
+     </Helmet>
     <div className="bg-white dark:bg-gray-900 flex flex-col lg:flex-row mb-20">
       <div className="lg:flex-1 p-8">
         <a
